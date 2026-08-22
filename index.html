@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InsureCalc365 | U.S. Auto Insurance Cost Calculator</title>
+<meta name="description" content="Estimate monthly and annual U.S. auto insurance costs using state, age, vehicle value, coverage level, driving record and annual mileage.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><h1>InsureCalc365</h1><p>U.S. Auto Insurance Cost Calculator</p></div></header>
+<main class="wrap">
+<section class="card">
+<h2>Estimate Your Auto Insurance Cost</h2>
+<p class="intro">Built for U.S. drivers. Enter a few details to get a rough monthly and annual estimate.</p>
+
+<label for="state">State</label>
+<select id="state">
+<option value="1.00">Select state</option>
+<option value="1.18">California</option>
+<option value="1.28">Florida</option>
+<option value="1.15">Georgia</option>
+<option value="0.92">Illinois</option>
+<option value="1.22">Michigan</option>
+<option value="1.08">New Jersey</option>
+<option value="1.20">New York</option>
+<option value="0.96">North Carolina</option>
+<option value="1.00">Ohio</option>
+<option value="1.05">Pennsylvania</option>
+<option value="1.12">Texas</option>
+<option value="0.98">Virginia</option>
+<option value="1.06">Washington</option>
+<option value="1.00">Other U.S. State</option>
+</select>
+
+<label for="age">Driver Age</label>
+<input id="age" type="number" min="16" max="100" placeholder="Example: 40">
+
+<label for="vehicleValue">Vehicle Value ($)</label>
+<input id="vehicleValue" type="number" min="1000" step="500" placeholder="Example: 30000">
+
+<label for="coverage">Coverage Level</label>
+<select id="coverage">
+<option value="0.68">Minimum / Liability Focused</option>
+<option value="1.00" selected>Standard Full Coverage</option>
+<option value="1.28">Higher-Limit Full Coverage</option>
+</select>
+
+<label for="record">Driving Record</label>
+<select id="record">
+<option value="1.00">Clean Record</option>
+<option value="1.25">One Recent Violation</option>
+<option value="1.55">One Recent At-Fault Accident</option>
+<option value="2.00">Multiple Incidents</option>
+</select>
+
+<label for="miles">Annual Miles Driven</label>
+<select id="miles">
+<option value="0.90">Under 7,500 miles</option>
+<option value="1.00" selected>7,500–12,000 miles</option>
+<option value="1.08">12,001–18,000 miles</option>
+<option value="1.15">Over 18,000 miles</option>
+</select>
+
+<button id="calculateBtn">Estimate Insurance Cost</button>
+<div id="message" class="message" aria-live="polite"></div>
+
+<div id="results" class="results" hidden>
+<div class="resultbox"><span>Estimated Monthly Cost</span><strong id="monthly">$0</strong></div>
+<div class="resultbox"><span>Estimated Annual Cost</span><strong id="annual">$0</strong></div>
+</div>
+
+<p class="note">This is a rough educational estimate for U.S. drivers, not an insurance quote. Real premiums vary by insurer, ZIP code, vehicle details, discounts, coverage limits, deductibles and other factors.</p>
+</section>
+
+<section class="card info">
+<h2>What Affects Auto Insurance Cost?</h2>
+<p>U.S. auto insurers may consider factors such as your state, location, age, driving history, vehicle, annual mileage, coverage level and prior insurance history. Available rating factors vary by state and insurer.</p>
+</section>
+
+<section class="card info">
+<h2>USA-First Calculator</h2>
+<p>InsureCalc365 is designed for U.S. users. Dollar amounts, terminology and state-based estimates are presented with the U.S. market in mind.</p>
+</section>
+</main>
+
+<footer><div class="wrap"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a><p>© 2026 InsureCalc365</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
