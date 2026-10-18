@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://insurecalc365.com/sitemap.xml
